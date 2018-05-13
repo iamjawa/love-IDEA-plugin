@@ -59,9 +59,9 @@ SIGNATURES = {
 ["love.filesystem.createDirectory"] = [=[createDirectory(name) - Creates a directory.]=],
 ["love.filesystem.exists"] = [=[exists(filename) - Check whether a file or directory exists.]=],
 ["love.filesystem.getAppdataDirectory"] = [=[getAppdataDirectory() - Returns the application data directory (could be the same as getUserDirectory)]=],
-["love.filesystem.getDirectoryItems"] = [=[getDirectoryItems(dir) - Returns a table with the names of files and subdirectories in the specified path. The table is not sorted in any way; the order is undefined.
-
-If the path passed to the function exists in the game and the save directory, it will list the files and directories from both places.]=],
+["love.filesystem.getCRequirePath"] = [=[getCRequirePath() - Gets the filesystem paths that will be searched for c libraries when require is called.]=],
+["love.filesystem.getDirectoryItems"] = [=[getDirectoryItems(dir) - Returns a table with the names of files and subdirectories in the specified path. The table is not sorted in any way; the order is undefined. If the path passed to the function exists in the game and the save directory, it will list the files and directories from both places.]=],
+["love.filesystem.getInfo"] = [=[getInfo(path, filtertype) - Gets information about the specified file or directory.]=],
 ["love.filesystem.getIdentity"] = [=[getIdentity(name) - Gets the write directory name for your game. Note that this only returns the name of the folder to store your files in, not the full location.]=],
 ["love.filesystem.getLastModified"] = [=[getLastModified(filename) - Gets the last modification time of a file.]=],
 ["love.filesystem.getRealDirectory"] = [=[getRealDirectory(filepath) - Gets the platform-specific absolute path of the directory containing a filepath.
@@ -104,6 +104,7 @@ If symbolic links are not enabled (via love.filesystem.setSymlinksEnabled), this
 The paths string given to this function is a sequence of path templates separated by semicolons. The argument passed to require will be inserted in place of any question mark ("?") character in each template (after the dot characters in the argument passed to require are replaced by directory separators.)
 
 The paths are relative to the game's source and save directories, as well as any paths mounted with love.filesystem.mount.]=],
+["love.filesystem.setCRequirePath"] = [=[setCRequirePath(paths) - Sets the filesystem paths that will be searched for c libraries when require is called.]=],
 ["love.filesystem.setSource"] = [=[setSource(path) - Sets the source of the game, where the code is present. This function can only be called once, and is normally automatically done by LÖVE.]=],
 ["love.filesystem.setSymlinksEnabled"] = [=[setSymlinksEnabled(enable) - Sets whether love.filesystem follows symbolic links. It is enabled by default in version 0.10.0 and newer, and disabled by default in 0.9.2.]=],
 ["love.filesystem.unmount"] = [=[unmount(archive) - Unmounts a zip file or folder previously mounted for reading with love.filesystem.mount.]=],

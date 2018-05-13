@@ -5,8 +5,10 @@ function areSymlinksEnabled() end
 function createDirectory() end
 function exists() end
 function getAppdataDirectory() end
+function getCRequirePath() end
 function getDirectoryItems() end
 function getIdentity() end
+function getInfo() end
 function getLastModified() end
 function getRealDirectory() end
 function getRequirePath() end
@@ -28,6 +30,7 @@ function newFile() end
 function newFileData() end
 function read() end
 function remove() end
+function setCRequirePath() end
 function setIdentity() end
 function setRequirePath() end
 function setSource() end

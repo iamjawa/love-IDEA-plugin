@@ -16,7 +16,7 @@ function resume() end
 function rewind() end
 function setDistanceModel() end
 function setDopplerScale() end
-function setEffect end
+function setEffect() end
 function setOrientation() end
 function setPosition() end
 function setVelocity() end

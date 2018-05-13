@@ -71,7 +71,7 @@ SIGNATURES = {
 ["love.audio.rewind"] = [=[rewind() - Rewinds all playing audio.]=],
 ["love.audio.setDistanceModel"] = [=[setDistanceModel(model) - Sets the distance attenuation model.]=],
 ["love.audio.setDopplerScale"] = [=[setDopplerScale(scale) - Sets a global scale factor for velocity-based doppler effects. The default scale value is 1.]=],
-["love.audio.setEffect"] = [=[setEffect() - Defines an effect that can be applied to a Source.]=],
+["love.audio.setEffect"] = [=[setEffect(name, settings) - Defines an effect that can be applied to a Source.]=],
 ["love.audio.setOrientation"] = [=[setOrientation(fx, fy, fz, ux, uy, uz) - Sets the orientation of the listener.]=],
 ["love.audio.setPosition"] = [=[setPosition(x, y, z) - Sets the position of the listener, which determines how sounds play.]=],
 ["love.audio.setVelocity"] = [=[setVelocity(x, y, z) - Sets the velocity of the listener.]=],
